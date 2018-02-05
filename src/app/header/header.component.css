@@ -1,0 +1,111 @@
+#header_section{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-wrapper{
+    display: flex;
+    /* justify-content: space-between; */
+   
+}
+.nav_elements_parent{
+    display: flex;
+    flex: 1;
+}
+
+.nav-wrapper .nav-elments{
+    /* display: flex; */
+    flex: 1 1 50%;
+}
+
+.right-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.right-nav .right_items_container{
+    display: flex;
+    width: 26em;
+    justify-content: flex-end;
+}
+.right-nav .user_image-wrapper{
+    height: 37px;
+    width: 35px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+.right-nav .user_image-wrapper .user_image{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.right-nav .add_btn{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 0px;
+    width: 11em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.right-nav .icon_parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35px;
+}
+.right-nav .icon_parent > i{
+    display: flex;
+    justify-content: center;
+    color: #0E1A35;
+}
+.right-nav .user_options{
+    display: flex;
+    padding: 0px 30px 0px 25px;
+}
+.right-nav .add_proj_btn{
+    border: transparent;
+    color: white;
+    background: #5584FF;
+    border-radius: 20px;
+    height: 2em;
+    width: 8em;
+}
+.right-nav  .downarrow {
+    
+        height: 0;
+        width: 0;
+        border: 4px solid transparent;
+        border-top-color: #000;
+        margin-top: 15px;
+        margin-left: 10px;
+     
+  }
+
+  .right-nav  .item{
+      /* flex: 1 1 25%; */
+    
+  }
+
+  /*************/
+  /*  left nav */
+  /*************/
+  .left_nav{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .icons_wrapper{
+      display: flex;
+      width: 6em;
+      justify-content: space-evenly;
+  }
+  .icons_wrapper .fa-caret-left{
+    font-size: 11px;
+
+    position: relative;
+    top: -2px;
+    color: #5da6e6;
+  }

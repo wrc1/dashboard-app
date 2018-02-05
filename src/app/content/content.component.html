@@ -1,0 +1,42 @@
+<section id="content-section">
+  <div class="content_wrapper">
+    <div class="text-wrapper">
+      <h1>Hello John!</h1>
+    </div>
+    <div class="section_wrapper">
+      <div class="charts_section single_section">
+        <div class="chartA_section">
+          <div class="inner_chart empty_chart">
+              note:
+              this space is empty because this libery of charts 
+              are not fully responsive (like devExtream),
+              and will block the sidebar.
+          </div>
+        </div>
+        <div class="chartB_section">
+            <div class="inner_chart">
+                <fusioncharts
+                 [id]="id2" 
+                 [width]="width"
+                  [height]="height" 
+                  [type]="type2"
+                   [dataFormat]="dataFormat2"
+                    [dataSource]="dataSource2">
+                  </fusioncharts>
+            </div>
+        </div>
+      </div>
+      <div class="info_section single_section">
+        <div class="info_item">
+          <app-info [opration]="'tasks'"></app-info>
+        </div>
+        <div class="info_item">
+          <app-info [opration]="'messages'"></app-info>
+        </div>
+        <div class="info_item">
+          <app-info [opration]="'activitis'"></app-info>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

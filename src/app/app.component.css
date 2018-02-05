@@ -1,0 +1,67 @@
+/* .section{
+    display: flex;
+    flex-flow: column;
+    height: 300px;
+}
+.header{
+    background: tomato;
+}
+
+.content{
+    flex: 2 ;
+    background: gold;
+    overflow: auto;
+} */
+
+/*
+section {
+  display: flex;
+  flex-flow: column;
+  height: 700px;
+}
+header {
+  background: tomato;
+}
+div {
+  flex: 2 ;
+  background: gold;
+  overflow: auto;
+}
+
+*/
+
+#root_app_content{
+    display: flex;
+    /* flex-direction: column; */
+    height: 100vh;
+}
+.side_view{
+    flex: 1 1 200px;
+    background-color:#0E1A35; 
+}
+.main_view{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.header{
+    height: 65px;
+}
+.content{
+    
+    flex:1;
+}
+.sidebar,
+.open{
+    display: block;
+
+}
+
+/* .open{
+    display: block;
+} */
+.sidebar,
+.close{
+    display: none;
+}

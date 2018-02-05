@@ -1,0 +1,43 @@
+<section class="info_section">
+    <div class="header_info">
+        <div class="items_position">
+            <div class="title_wraaper">
+                <div class="title">
+                    {{componentTitle}}
+                </div>
+            </div>
+            <div class="indicators_wrapper">
+                <div class="list_number icons">
+                    {{listNumber}}
+                </div>
+                
+                <div class="alert_number icons" *ngIf="alertNumber">
+                    <span>{{alertNumber}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info_list">
+        <div *ngIf="tasks">
+            <div *ngFor="let task of tasks">
+                <app-task [myTask]="task"
+                (titleEimter) = "eventTitle($event)"
+                (alertEmiter) = "eventAlert()"></app-task>
+            </div>
+        </div>
+        <div *ngIf="messages">
+            <div *ngFor="let message of messages">
+                <app-message [myMessage]="message"
+                (titleEimter) = "eventTitle($event)"
+                (readMessageEmiter)="onUpdateListMessages()"></app-message>
+            </div>
+        </div>
+        <div *ngIf="activitis">
+            <div *ngFor="let activity of activitis">
+                <app-activity class="activity_app" [myActivity]="activity"
+                (titleEimter) = "eventTitle($event)"></app-activity>
+            </div>
+        </div>
+    </div>
+    
+</section>

@@ -1,0 +1,26 @@
+<section class="message_section"
+[class.read_message]="isMessageRead" (click)="readeMessage()">
+  <div class="content_message" *ngIf="myMessage">
+    <div class="user_image_section">
+      <img class="image" [src]="myMessage.image">
+    </div>
+    <div class="message_body">
+      <div class="upper_content">
+        <span class="user_name">{{myMessage.title}}</span>
+        <div class="time_wrapper">
+            <span>
+              3 days ago</span>
+        </div>
+      </div>
+      <div class="down_content">
+        <div class="main_message">
+            {{myMessage.description}} 
+            <div class="icons">
+                <i class="fa fa-reply" aria-hidden="true"></i>
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

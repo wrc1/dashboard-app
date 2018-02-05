@@ -1,0 +1,19 @@
+<div id="root_app_content">
+
+    <div class="side_view" [ngClass]="menuState">
+        <app-sidebar ></app-sidebar>
+    </div>
+    <div class="main_view">
+        <app-header class="header"
+        (navigationEmiter) = "toggleEmiter()"></app-header>
+
+        <app-content class="content"></app-content>
+    </div>
+
+</div>
+
+<!-- <section>
+    <app-header class="header"></app-header>
+    <app-content class="content"></app-content>
+ 
+</section> -->

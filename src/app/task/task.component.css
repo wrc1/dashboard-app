@@ -1,0 +1,62 @@
+.task_section{
+    height: 70px;
+    display: flex;
+ 
+    flex-direction: column;
+    justify-content: center;
+    border-top:1px solid lightgray;
+}
+.content_task{
+    height: 50px;
+    
+    display: flex;
+}
+
+.left_content{
+   
+    flex: 1 1 70%;
+    display: flex;
+    padding-left: 10px;
+    /* justify-content: space-evenly; */
+}
+.right_content{
+    flex: 1 1 30%;
+    max-width: 30px;
+}
+.user_name{
+    min-width: 35px;
+    border-radius: 25px;
+    height: 35px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 19px;
+    background-color: #5384ff;
+    color: white;
+    margin: 5px 10px 0px 5px;
+
+}
+.user_task{
+    padding-top:6px;
+    font-weight: 600;
+}
+
+.task_time{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.icon_info_wrapper{
+    padding-top: 10px;
+}
+.icon_info_wrapper .fa-ellipsis-v{
+    font-size: 20px;
+    color: #696464;
+    font-weight: 100;
+}
+.alertTime{
+    color:#FA6D9C;
+}
+.normalTime{
+    color: gray;
+    opacity: 0.8;
+    font-weight: 100;
+}

@@ -1,0 +1,36 @@
+<section class="activity_section">
+    <div class="content_activity" *ngIf="myActivity">
+      <div class="user_image_section">
+        <img class="image" [src]="myActivity.image">
+        
+      </div>
+      <div class="activity_body">
+        <div class="upper_content">
+          <span class="user_name">title</span>
+          <div class="task_wrapper">
+              <span [ngSwitch] = "myActivity?.task">
+                <span class="case"  *ngSwitchCase="'add'">added new project</span>
+                <span class="case" *ngSwitchCase="'commite'">commented project</span>
+                <span class="case" *ngSwitchCase="'complete'">completed task</span>
+                
+              </span>
+                <span class="space_left">{{myActivity.description}}</span>
+          </div>
+        </div>
+        <div class="down_content">
+          <div class="main_activity">
+              <div class="icons">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <span>3 days ago</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activity_line">
+
+      </div>
+  </section>
+ 
+ 
+ 

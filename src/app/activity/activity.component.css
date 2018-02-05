@@ -1,0 +1,81 @@
+.activity_section{
+    height: 70px;
+    display: flex;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.content_activity{
+    height: 60px;
+    display: flex;
+    padding-left: 10px;
+}
+.user_image_section{
+    max-width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user_image_section .image{
+    border-radius: 30px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.activity_body{
+    flex:1 1 100%;
+    padding-left: 15px;
+    padding-top:10px;
+}
+.upper_content{
+    display: flex;
+    padding-bottom: 3px;
+    align-items: center;
+    font-size: 14px;
+}
+.upper_content .user_name{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.task_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px 0px 0px 5px;
+}
+.task_wrapper .space_left{
+    padding-left: 6px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+}
+.task_wrapper .case{
+    color: gray;
+    opacity: 0.9;
+}
+
+.down_content .main_activity{
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    width: 90%;
+    display: block;
+    white-space: nowrap;
+}
+.icons{
+    padding-top: 2px;
+    color: gray;
+    opacity: 0.8;
+    font-weight: 100;
+}
+.activity_line{
+    border-left: 1px solid lightgray;
+    height: 32px;
+    position: absolute;
+    width: 1px;
+    top: 54px;
+    left: 28px;
+    z-index: 1;
+}
